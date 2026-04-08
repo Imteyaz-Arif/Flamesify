@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Pacifico&display=swap');
+
+:root {
+  --primary-pink: #ff2a55;
+  --secondary-pink: #ff758c;
+  --bg-gradient: radial-gradient(circle at top left, #ff6b9e, transparent 60%),
+    radial-gradient(circle at bottom right, #ff8da1, transparent 60%),
+    radial-gradient(circle at 50% 50%, #ff2a55, transparent 60%),
+    #e6005c;
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 8px 32px 0 rgba(100, 0, 20, 0.4);
+  --text-dark: #4a0e1b;
+  --text-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Prevent scroll out of the box if nothing overflows */
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.title-font {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Base custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
