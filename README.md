@@ -1,27 +1,27 @@
 # Flamesify 💘
- 
-👉 **[Live Application: flamesify.vercel.app](https://flamesify.vercel.app)** 👈
 
-Flamesify is a stunning, beautifully animated React application that instantly calculates a romantic "FLAMES" result between any two names.
+**🚀 Live Application:** [https://flamesify.vercel.app](https://flamesify.vercel.app)
 
-## Features
-- **Vibrant Aesthetic**: Gorgeous mesh gradients and premium glassmorphism styling.
-- **Native Sharing**: Instantly captures the result as a screenshot and triggers your device's native sharing capabilities to send the picture to friends.
-- **Flawless Animations**: Mathematically calculates common letters and sequentially strikes them out, hopping indicator and popping final output with a smooth UI overlay.
-- **Fully Responsive**: Optimised for smartphones, shifting layouts nicely to make sure text and icons balance cleanly! 
+A stunning, beautifully animated web application perfectly designed to calculate the romantic "FLAMES" result between any two names. Fully built with modern UI principles, it brings the classic paper-and-pen childhood game to life through dynamic step-by-step animations and seamless sharing mechanics.
 
-## Getting Started
+## 📖 How to Use the Service
+1. **Access the App**: Click the Live Application link above.
+2. **Enter Names**: Type the first name into the left input box and the second name into the right input box.
+3. **Trigger the Match**: Click the "Match" button to start the calculation engine.
+4. **Watch the Magic**: Follow the timeline string as the algorithm visually calculates common letters, strikes them out one-by-one, and hops through the FLAMES acronym. 
+5. **Share the Result**: Once your final relationship status pops out, click "Share Result" to instantly capture an HD image and send it to your friends using your device's native sharing features!
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-2. **Start Dev Server**
-   ```bash
-   npm run dev
-   ```
+## ✨ Features
+- **Flawless Sequential Animations**: A mathematical engine drives step-by-step UI updates showing the classic letter elimination and acronym hopping.
+- **Vibrant Mesh Gradient UI**: A highly-polished, premium visual aesthetic using rich neon pink gradients and sleek frosted glassmorphism containers.
+- **Native Image Sharing**: Uses integrated canvas utilities to screenshot the result seamlessly without any backend server.
+- **Mobile Optimized**: Intelligently auto-scales typography, centers elements, and stacks layouts dynamically for a perfect experience on smartphone screens.
 
-Built using Vite + React + Vanilla CSS! Enjoy the magic!
+## 🛠️ Technology Stack
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Vanilla CSS3 (Custom Variables, Flexbox, Keyframe Animations)
+- **Utilities**: `html2canvas` (For result sharing)
 
 ---
 **Developed by Imteyaz Arif**
