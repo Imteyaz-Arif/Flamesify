@@ -1,6 +1,6 @@
 # Flamesify 💘
  
-👉 **[Live Demo: flamesify.vercel.app](https://flamesify.vercel.app)** 👈
+👉 **[Live Application: flamesify.vercel.app](https://flamesify.vercel.app)** 👈
 
 Flamesify is a stunning, beautifully animated React application that instantly calculates a romantic "FLAMES" result between any two names.
 
