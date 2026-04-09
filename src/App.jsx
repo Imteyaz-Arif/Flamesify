@@ -172,13 +172,12 @@ function App() {
   const handleShare = async () => {
     if (!resultsRef.current) return;
 
-    // Briefly hide the share button to keep the screenshot clean
     const shareBtn = resultsRef.current.querySelector('.share-btn');
     if (shareBtn) shareBtn.style.display = 'none';
 
     try {
       const canvas = await html2canvas(resultsRef.current, {
-        backgroundColor: '#e6005c', // Base pink for mesh gradient screenshot match
+        backgroundColor: '#e6005c',
         scale: 2,
       });
 

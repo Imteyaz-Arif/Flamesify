@@ -132,7 +132,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem 6rem 2rem; /* Add bottom padding so absolute signature won't overlap */
+  padding: 4rem 2rem 6rem 2rem;
   position: relative;
 }
 
@@ -353,7 +353,6 @@
   }
 
   .heart-icon {
-    /* Retain optical horizontal adjustment, but remove vertical shift for stacked layout */
     transform: translate(-10px, 0) !important;
   }
 
