@@ -47,7 +47,7 @@ function App() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const resultsRef = useRef(null);
-  const letterRefs = useRef({}); // To calculate underscore position
+  const letterRefs = useRef({});
   const skipRef = useRef(false);
   const [hasAutoMatched, setHasAutoMatched] = useState(false);
 
@@ -88,7 +88,7 @@ function App() {
     const data = calculateFlamesTimeline(n1, n2);
     setTimelineData(data);
 
-    // Scroll to results using smooth behavior
+    // Scroll to results
     setTimeout(() => {
       resultsRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
@@ -138,7 +138,7 @@ function App() {
         if (checkSkip()) return;
       }
       setEliminated(prev => [...prev, round.eliminatedIndex]);
-      setUnderscoreIdx(-1); // Hide underscore during elimination strike
+      setUnderscoreIdx(-1);
       if (checkSkip()) return;
       await wait(800);
       if (checkSkip()) return;
@@ -196,7 +196,7 @@ function App() {
             });
           } catch (err) { }
         } else {
-          // Fallback to auto-downloading the image if native sharing isn't supported
+          // Fallback share behavior
           const link = document.createElement('a');
           link.download = 'flamesify-result.png';
           link.href = URL.createObjectURL(blob);
@@ -213,7 +213,10 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section">
         <h1 className="logo-title title-font">Flamesify</h1>
-        <p className="subtitle">Find out what your names say about your relationship!</p>
+        <p className="subtitle">
+          <strong style={{ fontSize: '1.5rem', display: 'block', marginBottom: '0.5rem' }}>FLAMES CALCULATOR</strong>
+          Find out what your names say about your relationship!
+        </p>
 
         <div className="input-container">
           <div className="input-group">
